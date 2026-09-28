@@ -184,6 +184,6 @@
 	const det = (T) => T[0] * T[4] - T[1] * T[3];
 
 	const Hat = { HAT, metatiles, hats, det, apply, mul, hexPt };
-	root.ChaosHat = Hat;
+	root.TilingsHat = Hat;
 	if (typeof module !== "undefined") module.exports = Hat;
 })(typeof window !== "undefined" ? window : globalThis);

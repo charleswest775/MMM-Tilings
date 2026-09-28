@@ -1,4 +1,4 @@
-/* Not chaos: tilings that never repeat, and one of a plane with no edge. A tiling is laid tile
+/* Tilings that never repeat, and one of a plane with no edge. A tiling is laid tile
  * by tile, round and round from the centre, then held:
  *   - quasiperiodic rhombs from de Bruijn's multigrid (1981): n families of evenly spaced
  *     parallel lines, at random offsets, each crossing of two lines a rhomb. Five families make
@@ -14,7 +14,7 @@
  * changes stay together; when the tiling is laid the sim rests.
  */
 (function (root) {
-	const Hat = root.ChaosHat || require("./hat.js");
+	const Hat = root.TilingsHat || require("./hat.js");
 
 	const PHI = (1 + Math.sqrt(5)) / 2;
 	const MARGIN = 0.95;     // the tiling's radius, as a fraction of half the canvas
@@ -375,7 +375,7 @@
 				equations.push("unreflected : reflected hats → φ⁴ = 6.854…");
 			}
 			const stories = [].concat(k.story);
-			equations.push(`<span class="chaos-note">${stories[Math.floor(this.seed * 1000) % stories.length]}</span>`);
+			equations.push(`<span class="tilings-note">${stories[Math.floor(this.seed * 1000) % stories.length]}</span>`);
 			return { title: k.title, subtitle: k.subtitle, equations };
 		}
 
@@ -426,7 +426,7 @@
 	Tilings.directions = directions;
 	Tilings.info = { title: "Tilings", equations: [] };
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.tilings = Tilings;
+	root.TilingsSimulations = root.TilingsSimulations || {};
+	root.TilingsSimulations.tilings = Tilings;
 	if (typeof module !== "undefined") module.exports = { Tilings };
 })(typeof window !== "undefined" ? window : globalThis);
