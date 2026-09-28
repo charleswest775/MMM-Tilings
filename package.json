@@ -1,7 +1,7 @@
 {
   "name": "mmm-tilings",
   "version": "1.0.0",
-  "description": "MagicMirror² module: animated tilings-theory simulations (Lorenz attractor, diverging pendulums, fractal basins, logistic map, symmetric icons, the three-body problem, chaotic billiards, rule 30), and pages of physics and mathematics: a Bohr-style atom and hydrogen's orbitals, a fractal zoom, sacred geometry, the planets' dance, Chladni figures, aperiodic and hyperbolic tilings, snow crystals, and tonight's sky.",
+  "description": "MagicMirror² module: tilings that never repeat, laid tile by tile from the centre: Penrose, Ammann–Beenker and other quasiperiodic tilings, Escher's hyperbolic Circle Limit, and the hat.",
   "main": "MMM-Tilings.js",
   "scripts": {
     "test": "node --test"
@@ -11,9 +11,11 @@
     "tiling",
     "Penrose",
     "aperiodic",
+    "einstein",
     "hat tile",
     "hyperbolic",
     "Escher",
+    "Circle Limit",
     "quasicrystal",
     "mathematics"
   ],
