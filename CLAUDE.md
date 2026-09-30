@@ -7,7 +7,7 @@ Split out of MMM-ChaosTheory on 2026-09-28, with its history (it was the `tiling
 The shell (`MMM-Tilings.js`, the `node_helper.js` stats panel, `dev/preview.html`) is shared in
 spirit with the sibling modules (MMM-ChaosTheory, MMM-Atom, MMM-FractalZoom, MMM-Chladni,
 MMM-SacredGeometry, MMM-PlanetsDance, MMM-SnowCrystal, MMM-NightSky, MMM-PhotoDeck, all under
-~/dev/mirror-modules or ~/dev): a fix there probably belongs in the siblings too.
+~/dev/mirror-modules or ~/dev, MMM-StandardMap, MMM-ChaoticWaterwheel, MMM-DoubleSlit, MMM-Sandpile, MMM-Harmonograph): a fix there probably belongs in the siblings too.
 
 ## What exists (v1.0.0)
 
